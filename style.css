@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+:root {
+    background-color: rgb(230, 239, 246);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 16rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 577px) {
+    .container {
+        width: 550px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* desktop  */
+@media (min-width: 1300px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.card {
+    width: 600px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    top: 8rem;
+    box-shadow: 0px 7px 14px 1px rgb(176 184 201);
+}
+
+.two_line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.one_card {
+    background-color: white;
+    padding: 30px;
+}
+
+.one {
+    color: rgb(74, 190, 189);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0px 10px 0px;
+}
+
+.one::first-letter {
+    text-transform: uppercase;
+}
+
+.two {
+    color: rgb(191, 223, 50);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0px 20px 0px;
+}
+
+.there {
+    color: rgba(128, 128, 128, 0.644);
+}
+
+.there::first-letter {
+    text-transform: uppercase;
+}
+
+.two_card {
+    background-color: rgb(43, 179, 177);
+    padding: 30px;
+}
+
+.four {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.price {
+    display: flex;
+}
+
+.one_price {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 20px 10px 0px 0px;
+}
+
+.two_price {
+    color: rgba(255, 255, 255, 0.596);
+    padding: 25px 0px 0px 0px;
+}
+
+.five {
+    color: rgba(255, 255, 255, 0.87);
+    /* padding: 10px 0px 10px 0px ; */
+    margin: 10px 0px 20px 0px;
+
+}
+
+.five::first-letter {
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    margin: 10px auto;
+    width: 240px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(191, 223, 50);
+    box-shadow: 0px 6px 18px 1px rgba(99, 99, 99, 0.664);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.there_card {
+    background-color: rgb(74, 190, 189);
+    padding: 30px;
+}
+
+.six {
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 14px;
+    padding: 20px 80px 0px 0px;
+    line-height: 1.5;
+}
+
+.six::first-letter {
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:620px) {
+    .container {
+        grid-row-gap: 10rem;
+    }
+
+    .card {
+        width: 300px;
+        margin: 50px auto;
+    }
+
+    .one_card>p {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .two_line {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+    .card {
+        width: 250px;
+    }
+
+    .one_card>p {
+        padding: 20px 0px 10px 0px;
+    }
+
+    .five {
+        font-size: 12.8px;
+    }
+
+    button {
+        width: 180px;
+    }
+
+    .six {
+        padding: 20px 0px 0px 0px;
+    }
+}
+
+/*! start Attribution */
+.attribution {
+    color: #8aa1c0;
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.attribution a {
+    font-size: smaller;
+    text-decoration: none;
+    color: rgb(74, 190, 189);
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.attribution a:hover::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    content: "\f0a9";
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+@media (max-width: 460px) {
+    .attribution {
+        white-space: break-spaces;
+        line-height: 2;
+        left: 0;
+        width: -webkit-fill-available;
+    }
+}
+
+/*! end Attribution */
